@@ -1,6 +1,6 @@
 Import-Module ActiveDirectory
 
-$allUsers = Get-ADUser -Filter {enabled -eq "True"} -SearchBase "OU={ENTERDATAHERE},OU=ENTERDATAHERE},OU=ENTERDATAHERE},DC=ENTERDATAHERE},DC=ENTERDATAHERE}" | select-object SamAccountName -expandproperty SamAccountName
+$allUsers = Get-ADUser -Filter {enabled -eq "True"} -SearchBase "OU={ENTERDATAHERE},OU={ENTERDATAHERE},OU={ENTERDATAHERE},DC={ENTERDATAHERE},DC={ENTERDATAHERE}" | select-object SamAccountName -expandproperty SamAccountName
 
 $allManagers = @()
 
